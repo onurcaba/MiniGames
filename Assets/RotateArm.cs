@@ -7,13 +7,18 @@ using TMPro;
 public class RotateArm : MonoBehaviour
 {
     public TextMeshProUGUI text;
-    public float rotation = 180f;
+    public static float rotation = 180f;
 
     public GameObject arm;
 
     private void Start()
     {
         MatchText();
+    }
+
+    private void CheckShape()
+    {
+        
     }
 
     private string MatchText()

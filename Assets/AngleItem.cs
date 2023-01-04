@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,15 +6,10 @@ using UnityEngine;
 public class AngleItem : MonoBehaviour
 {
     public AngleTypesSO angleType;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Vector3 initialPosition;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        initialPosition = transform.position;
     }
 }
